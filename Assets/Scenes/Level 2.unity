@@ -219,9 +219,39 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4086391104293931091, guid: e57394bfb15808542be6128f88976257,
         type: 3}
+      propertyPath: ballSounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086391104293931091, guid: e57394bfb15808542be6128f88976257,
+        type: 3}
       propertyPath: paddle1
       value: 
       objectReference: {fileID: 750343024}
+    - target: {fileID: 4086391104293931091, guid: e57394bfb15808542be6128f88976257,
+        type: 3}
+      propertyPath: ballSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 311bf4288e1914448a2c7b85daf20e78, type: 3}
+    - target: {fileID: 4086391104293931091, guid: e57394bfb15808542be6128f88976257,
+        type: 3}
+      propertyPath: ballSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 41b1f6ce14ae9ce4996c13cea5e30c6e, type: 3}
+    - target: {fileID: 4086391104293931091, guid: e57394bfb15808542be6128f88976257,
+        type: 3}
+      propertyPath: ballSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 61212f8ac7180c440b5bf5bf06cf84ce, type: 3}
+    - target: {fileID: 4086391104293931091, guid: e57394bfb15808542be6128f88976257,
+        type: 3}
+      propertyPath: ballSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: cdfb3acf6ba92464786cdd4f7cbc5a20, type: 3}
+    - target: {fileID: 4086391104293931091, guid: e57394bfb15808542be6128f88976257,
+        type: 3}
+      propertyPath: ballSounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 99dd6705d1337d1469e4c59cc6cb3340, type: 3}
     - target: {fileID: 4086391104293931094, guid: e57394bfb15808542be6128f88976257,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -230,7 +260,7 @@ PrefabInstance:
     - target: {fileID: 4086391104293931094, guid: e57394bfb15808542be6128f88976257,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.728
+      value: 0.68
       objectReference: {fileID: 0}
     - target: {fileID: 4086391104293931094, guid: e57394bfb15808542be6128f88976257,
         type: 3}
@@ -1523,7 +1553,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 41b1f6ce14ae9ce4996c13cea5e30c6e, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

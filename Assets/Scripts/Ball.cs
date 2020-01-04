@@ -7,14 +7,19 @@ namespace Assets.Scripts
         [SerializeField] private Paddle paddle1;
         [SerializeField] private float xPush = 2f;
         [SerializeField] private float yPush = 15f;
+        [SerializeField] private AudioClip[] ballSounds;
 
         // state
         private Vector2 paddleToBallVector;
         private bool hasStarted;
+        
+        // Cached component references
+        private AudioSource myAudioSource;
 
         // Start is called before the first frame update
         void Start()
         {
+            myAudioSource = GetComponent<AudioSource>();
             paddleToBallVector = transform.position - paddle1.transform.position;
         }
 
@@ -47,7 +52,8 @@ namespace Assets.Scripts
         {
             if (hasStarted)
             {
-                GetComponent<AudioSource>().Play();
+                var randomAudioClip = ballSounds[Random.Range(0, ballSounds.Length)];
+                myAudioSource.PlayOneShot(randomAudioClip);
             }
         }
     }
