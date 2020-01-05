@@ -12,12 +12,19 @@ namespace Assets.Scripts
         private void Start()
         {
             _level = FindObjectOfType<Level>();
-            _level.CountBreakableBlocks();
+
+            if (tag == "Breakable")
+            {
+                _level.CountBlocks();
+            }
         }
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            DestroyBlock();
+            if (tag == "Breakable")
+            {
+                DestroyBlock();
+            }
         }
 
         private void DestroyBlock()
