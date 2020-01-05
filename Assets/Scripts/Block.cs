@@ -21,6 +21,8 @@ namespace Assets.Scripts
 
         private void DestroyBlock()
         {
+            FindObjectOfType<GameSession>().AddToScore();
+
             AudioSource.PlayClipAtPoint(_blockDestroySound, Camera.main.transform.position);
 
             Destroy(gameObject);

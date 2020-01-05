@@ -14,6 +14,7 @@ namespace Assets.Scripts
         public void LoadFirstScene()
         {
             SceneManager.LoadScene(0);
+            FindObjectOfType<GameSession>().ResetGame();
         }
 
         public void QuitGame()
