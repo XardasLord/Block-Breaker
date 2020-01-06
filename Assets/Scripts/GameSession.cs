@@ -11,6 +11,7 @@ namespace Assets.Scripts
 
         [SerializeField] private int _pointsPerBlockDestroyed = 83;
         [SerializeField] private TextMeshProUGUI _scoreText;
+        [SerializeField] private bool _isAutoPlayEnabled = false;
 
         // state variables
         [SerializeField] private int _currentScore = 0;
@@ -49,6 +50,11 @@ namespace Assets.Scripts
         public void ResetGame()
         {
             Destroy(gameObject);
+        }
+
+        public bool IsAutoPlayEnabled()
+        {
+            return _isAutoPlayEnabled;
         }
     }
 }

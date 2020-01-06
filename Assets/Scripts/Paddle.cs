@@ -6,23 +6,35 @@ namespace Assets.Scripts
     {
         [SerializeField] private float minX = 1f;
         [SerializeField] private float maxX = 15f;
-        [SerializeField] private float screenWidthInUnits = 16f; 
+        [SerializeField] private float screenWidthInUnits = 16f;
 
-        // Start is called before the first frame update
-        void Start()
+        private Ball _ball;
+        private GameSession _gameSession;
+
+        private void Start()
         {
-
+            _ball = FindObjectOfType<Ball>();
+            _gameSession = FindObjectOfType<GameSession>();
         }
 
-        // Update is called once per frame
-        void Update()
+        private void Update()
         {
-            var mouseXPositionInUnits = Input.mousePosition.x / Screen.width * screenWidthInUnits;
             var paddlePosition = new Vector2(transform.position.x, transform.position.y);
 
-            paddlePosition.x = Mathf.Clamp(mouseXPositionInUnits, minX, maxX);
+            paddlePosition.x = Mathf.Clamp(GetXPos(), minX, maxX);
 
             transform.position = paddlePosition;
+        }
+
+        private float GetXPos()
+        {
+            if (_gameSession.IsAutoPlayEnabled())
+            {
+                return _ball.transform.position.x;
+            }
+
+            // Otherwise get mouse position
+            return Input.mousePosition.x / Screen.width * screenWidthInUnits;
         }
     }
 }
