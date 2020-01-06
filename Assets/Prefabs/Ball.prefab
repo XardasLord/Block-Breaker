@@ -103,7 +103,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 74f780d24f8369743ba7d4d340c3997a, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!58 &4086391104293931093
 CircleCollider2D:
@@ -136,7 +136,11 @@ MonoBehaviour:
   _paddle1: {fileID: 0}
   _xPush: 2
   _yPush: 15
-  _ballSounds: []
+  _ballSounds:
+  - {fileID: 8300000, guid: 41b1f6ce14ae9ce4996c13cea5e30c6e, type: 3}
+  - {fileID: 8300000, guid: 61212f8ac7180c440b5bf5bf06cf84ce, type: 3}
+  - {fileID: 8300000, guid: cdfb3acf6ba92464786cdd4f7cbc5a20, type: 3}
+  - {fileID: 8300000, guid: 99dd6705d1337d1469e4c59cc6cb3340, type: 3}
   _randomFactor: 0.5
 --- !u!82 &1199871022
 AudioSource:
