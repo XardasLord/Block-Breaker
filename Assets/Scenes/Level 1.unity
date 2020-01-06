@@ -3736,7 +3736,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4086391104293931091, guid: e57394bfb15808542be6128f88976257,
         type: 3}
-      propertyPath: paddle1
+      propertyPath: _paddle1
       value: 
       objectReference: {fileID: 1268194731}
     - target: {fileID: 4086391104293931094, guid: e57394bfb15808542be6128f88976257,

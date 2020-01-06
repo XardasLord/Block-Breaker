@@ -222,6 +222,11 @@ PrefabInstance:
       propertyPath: paddle1
       value: 
       objectReference: {fileID: 750343024}
+    - target: {fileID: 4086391104293931091, guid: e57394bfb15808542be6128f88976257,
+        type: 3}
+      propertyPath: _paddle1
+      value: 
+      objectReference: {fileID: 750343024}
     - target: {fileID: 4086391104293931094, guid: e57394bfb15808542be6128f88976257,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -291,6 +296,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4514481286642166719, guid: 3bc32df3be736b94188191a63fbae784,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5638933990695010203, guid: 3bc32df3be736b94188191a63fbae784,
         type: 3}
       propertyPath: m_Name
