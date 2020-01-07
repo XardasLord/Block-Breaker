@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Assets.Scripts
 {
@@ -7,6 +9,10 @@ namespace Assets.Scripts
         [SerializeField] private AudioClip _blockDestroySound;
         [SerializeField] private GameObject _blockSparklesVFX;
         [SerializeField] private Sprite[] _hitSprites;
+        [SerializeField] private GameObject[] _effects;
+        [Range(0, 1)]
+        [SerializeField] 
+        private float _chanceForEffect = 0.2f;
 
         private Level _level;
 
@@ -50,6 +56,7 @@ namespace Assets.Scripts
             Destroy(gameObject);
             _level.BlockDestroyed();
             TriggerSparklesVFX();
+            GenerateSpecialEffect();
         }
 
         private void PlayBlockDestroySFX()
@@ -74,6 +81,18 @@ namespace Assets.Scripts
             else
             {
                 Debug.LogError($"Block sprite is missing from array on the game object: '{gameObject.name}'");
+            }
+        }
+
+        private void GenerateSpecialEffect()
+        {
+            if (Math.Abs(_chanceForEffect) > 0f && Random.value < _chanceForEffect)
+            {
+                // TODO: To improve performance we can destroy this game object if it triggers the loose collider for example
+                Instantiate(
+                    _effects[Random.Range(0, _effects.Length - 1)],
+                    transform.position,
+                    transform.rotation);
             }
         }
     }

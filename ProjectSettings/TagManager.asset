@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Breakable
   - Unbreakable
+  - EffectExpandPaddle
+  - EffectShrinkPaddle
+  - EffectFastGame
+  - EffectSlowGame
+  - Ball
   layers:
   - Default
   - TransparentFX

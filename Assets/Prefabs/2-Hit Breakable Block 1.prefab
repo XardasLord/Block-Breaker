@@ -124,3 +124,9 @@ MonoBehaviour:
   _blockSparklesVFX: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
   _hitSprites:
   - {fileID: 21300000, guid: 13f106334a7c1b5428458e04199f24a5, type: 3}
+  _effects:
+  - {fileID: 1189324354556980036, guid: b9a4ce98af5273146a6cba8743a56d66, type: 3}
+  - {fileID: 2527062178625973897, guid: ac163edce7bbedf4b9ca1afa874970ad, type: 3}
+  - {fileID: 7287224060102031619, guid: 7fe68a6aa539a1c4d9a5ac4159ac43ca, type: 3}
+  - {fileID: 2707650237814635779, guid: 661a02b9049367e40a4620550f4d9fb8, type: 3}
+  _chanceForEffect: 0.3

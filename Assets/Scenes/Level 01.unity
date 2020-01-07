@@ -216,6 +216,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Session
       objectReference: {fileID: 0}
+    - target: {fileID: 5638933990695010212, guid: 3bc32df3be736b94188191a63fbae784,
+        type: 3}
+      propertyPath: _gameSpeed
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5638933990695010213, guid: 3bc32df3be736b94188191a63fbae784,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -254,7 +259,7 @@ PrefabInstance:
     - target: {fileID: 5638933990695010213, guid: 3bc32df3be736b94188191a63fbae784,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5638933990695010213, guid: 3bc32df3be736b94188191a63fbae784,
         type: 3}
@@ -305,7 +310,7 @@ Transform:
   - {fileID: 1300391779}
   - {fileID: 2116853785}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &362363703
 PrefabInstance:
@@ -969,7 +974,7 @@ PrefabInstance:
     - target: {fileID: 3729898995188144761, guid: 9b8173d80cd4cc248ba0e3db816660f8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3729898995188144761, guid: 9b8173d80cd4cc248ba0e3db816660f8,
         type: 3}

@@ -9,7 +9,7 @@ namespace Assets.Scripts
         [SerializeField]
         private float _gameSpeed = 1f;
 
-        [SerializeField] private int _pointsPerBlockDestroyed = 83;
+        [SerializeField] private int _pointsPerBlockDestroyed = 1;
         [SerializeField] private TextMeshProUGUI _scoreText;
         [SerializeField] private bool _isAutoPlayEnabled = false;
 
@@ -55,6 +55,22 @@ namespace Assets.Scripts
         public bool IsAutoPlayEnabled()
         {
             return _isAutoPlayEnabled;
+        }
+
+        public void SpeedUpGame()
+        {
+            if (_gameSpeed < 2f)
+            {
+                _gameSpeed += 0.2f;
+            }
+        }
+
+        public void SpeedDownGame()
+        {
+            if (_gameSpeed > 0.2f)
+            {
+                _gameSpeed -= 0.2f;
+            }
         }
     }
 }
